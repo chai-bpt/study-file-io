@@ -1,0 +1,2 @@
+gcc fileCopy.c -o fileCopyNormal
+time ./fileCopyNormal testfile testfileCopy

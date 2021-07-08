@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 	fdSource = open(argv[1], O_RDONLY, 0666);
 	// error handling
 	
-	fdDest = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0666);
+	fdDest = open(argv[2], O_RDWR | O_CREAT | O_TRUNC | O_SYNC, 0666);
 	// error handling
 	
 	while(1)
